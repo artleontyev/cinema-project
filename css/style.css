@@ -1,6 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: #621402;
+  color: #FFF;
 }
 
 .container {
@@ -9,6 +15,12 @@ body {
 }
 
 .header {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 20, 2, 0.31)), color-stop(85.62%, #621402)), url("../img/bg.jpg") no-repeat top center/cover;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.jpg") no-repeat top center/cover;
+}
+
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,5 +64,168 @@ body {
   max-width: 33px;
   border-radius: 50%;
   margin-left: 11px;
+}
+
+.film {
+  margin: 60px 0 0 0;
+  color: #fff;
+}
+
+.film-title-small {
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.film-title {
+  margin: 11px 0 23px 0;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
+}
+
+.film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.film-trailer {
+  margin: auto;
+}
+
+.film-details {
+  margin: 50px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-icon {
+  margin: 0 14px 0 0;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 34px;
+}
+
+.rating-icon {
+  margin: 0 14px 0 0;
+}
+
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.session {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin: 62px 0 0 0;
+  padding: 46px 0 63px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session-date-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.session-date-item {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.session-date-item:hover {
+  background-color: #FE8E05;
+  color: #621402;
+}
+
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.session-month {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.session-day {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.session-week {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.sel {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  padding: 28px 0 18px 18px;
+  color: #fff;
+  cursor: pointer;
+ 
+}
+
+.select-cinema {
+  min-width: 470px;
 }
 /*# sourceMappingURL=style.css.map */
